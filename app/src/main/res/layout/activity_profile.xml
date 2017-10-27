@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context="fitnesscompanion.com.View.Profile.ProfileActivity">
+
+    <fitnesscompanion.com.Util.CircleImageView
+        android:onClick="onClickEdit"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageProfile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        app:civ_border_width="2dp"
+        android:clickable="true" />
+
+    <TableLayout
+        android:stretchColumns="*"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow >
+            <TextView
+                android:layout_span="3"
+                android:text="@string/personal_info"
+                android:layout_marginBottom="2dp"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow>
+            <View
+                android:layout_span="3"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/nickname"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/btnName"
+                android:onClick="onClickEdit"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:src="@drawable/ic_action_edit" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/gender"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/btnGender"
+                android:onClick="onClickEdit"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:src="@drawable/ic_action_edit" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/dob"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtDob"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/btnDob"
+                android:onClick="onClickEdit"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:src="@drawable/ic_action_edit" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/age"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_span="2"
+                android:id="@+id/txtAge"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_span="3"
+                android:text="@string/contact_info"
+                android:layout_marginBottom="2dp"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow  android:layout_marginBottom="2dp">
+            <View
+                android:layout_span="3"
+                android:layout_marginBottom="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/email"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_span="2"
+                android:id="@+id/txtEmail"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_span="3"
+                android:text="@string/body_info"
+                android:layout_marginBottom="2dp"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow  android:layout_marginBottom="2dp">
+            <View
+                android:layout_span="3"
+                android:layout_marginBottom="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#000000"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/height"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtHeight"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/btnHeight"
+                android:onClick="onClickEdit"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:src="@drawable/ic_action_edit" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:text="@string/weight"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/txtWeight"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageButton
+                android:id="@+id/btnWeight"
+                android:onClick="onClickEdit"
+                android:layout_gravity="right"
+                android:background="@null"
+                android:src="@drawable/ic_action_edit" />
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+
+
+</LinearLayout>

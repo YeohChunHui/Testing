@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="fitnesscompanion.com.View.RecordActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/record_description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/body_info"
+                style="@style/textFont"/>
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="2dp"
+                android:background="#000000"
+                android:layout_marginTop="35dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="@string/height" />
+
+            <TextView
+                android:id="@+id/txtHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp" />
+
+            <SeekBar
+                android:id="@+id/seekHeight"
+                android:layout_marginTop="70dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:text="@string/weight" />
+
+            <TextView
+                android:id="@+id/txtWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="100dp"/>
+
+            <SeekBar
+                android:id="@+id/seekWeight"
+                android:layout_marginTop="120dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="170dp"
+                android:text="@string/target_info"
+                style="@style/textFont"/>
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="2dp"
+                android:background="#000000"
+                android:layout_marginTop="205dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="220dp"
+                android:text="@string/steps"/>
+
+            <TextView
+                android:id="@+id/txtStep"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="220dp"/>
+
+            <SeekBar
+                android:id="@+id/seekStep"
+                android:layout_marginTop="240dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="270dp"
+                android:text="@string/weight"/>
+
+            <TextView
+                android:id="@+id/txtGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="270dp"/>
+
+            <SeekBar
+                android:id="@+id/seekGoal"
+                android:layout_marginTop="290dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="320dp"
+                android:text="@string/record_activitykcal" />
+
+            <TextView
+                android:id="@+id/txtCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="320dp"/>
+
+            <SeekBar
+                android:id="@+id/seekCalories"
+                android:layout_marginTop="340dp"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <Button
+            android:onClick="onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/button_confirm"
+            android:background="@drawable/roundcorner"
+            android:layout_marginTop="430dp"/>
+    </RelativeLayout>
+</LinearLayout>
