@@ -1,31 +1,12 @@
 package fitnesscompanion.com.View;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.Toast;
 
-import java.util.ArrayList;
-
-import fitnesscompanion.com.Controller.ActivityController;
-import fitnesscompanion.com.Database.ActivityDB;
-import fitnesscompanion.com.Database.ActivityVersionDB;
-import fitnesscompanion.com.Model.Activity;
 import fitnesscompanion.com.R;
-import fitnesscompanion.com.Util.ConnectionDetector;
-import fitnesscompanion.com.View.Home.MenuActivity;
-
 
 public class MainActivity extends AppCompatActivity {
-
-    private SharedPreferences preferences;
-    private ActivityController activityController;
-    private ActivityVersionDB versionDB;
-    private ActivityDB activityDB;
-    private ConnectionDetector detector;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -33,12 +14,9 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
 
-        activityController = new ActivityController(this);
-        versionDB= new ActivityVersionDB(this);
-        activityDB = new ActivityDB(this);
-        detector = new ConnectionDetector(this);
+        startActivity(new Intent(this, IChoiceActivity.class));
 
-        if(detector.isConnectingToInternet()) {
+        /*if(detector.isConnectingToInternet()) {
             activityController.getVersion(new ActivityController.VolleyCallVer() {
                 @Override
                 public void onSuccess(final int version) {
@@ -72,6 +50,6 @@ public class MainActivity extends AppCompatActivity {
         }
         else{
             startActivity(new Intent(this,LoginActivity.class));
-        }
+        }*/
     }
 }

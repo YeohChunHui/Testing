@@ -12,31 +12,16 @@
 
     <color name="color_gold">#FFDF00</color>
 
-    <!--Progress Color-->
-    <color name="simple_bg">#ff39065a</color>
-    <color name="black">#000000</color>
-    <color name="pager_bg">#212121</color>
-    <color name="material_pink">#FF4081</color>
-    <color name="pager_base_color">#4cffffff</color>
-    <color name="size_bg">#ffdcd5d6</color>
-    <color name="size_external">#ffff001e</color>
-    <color name="size_base">#ff959595</color>
-    <color name="size_external_circle">#a3ff3443</color>
+    <item name="SubBackground" type="color">#F1F8E9</item>
+    <item name="FontColor" type="color">#000000</item>
+    <item name="ButtonColor3" type="color">#DCEDC8</item>
+    <item name="ButtonFont" type="color">#000000</item>
+    <item name="DisableColor" type="color">#8999A9</item>
+    <item name="ButtonColor" type="color">#F1F8E9</item>
 
-    <!--Goals Color-->
-    <color name="floatingbar_step">	#FFD700</color>
-    <color name="floatingbar_weight">#32CD32</color>
-    <color name="floatingbar_calories">#800000</color>
+    <item name="MainBackground" type="color">#FFFFFF</item>
+    <item name="black" type="color">#000000</item>
 
-    <!--Reminder-->
-    <color name="white">#ffffff</color>
-    <color name="green">#00ff00</color>
-    <color name="blue">#0000ff</color>
-    <color name="light_grey">#aaaaaa</color>
-    <color name="grey">#888888</color>
-    <color name="dark_grey">#555555</color>
 
-    <color name="alarm_title_active">#444444</color>
-    <color name="alarm_title_outdated">#888888</color>
-    <color name="alarm_details">#888888</color>
+    <item name="TitleBar" type="color">#8BC34A</item>
 </resources>

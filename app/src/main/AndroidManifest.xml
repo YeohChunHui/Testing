@@ -5,14 +5,15 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-    <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
 
     <uses-feature
         android:name="android.hardware.bluetooth_le"
         android:required="true" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <application
         android:allowBackup="true"
@@ -31,65 +32,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.LoginActivity" />
-        <activity
-            android:name=".View.SignUpActivity"
-            android:parentActivityName=".View.LoginActivity"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".View.Home.MenuActivity"
-            android:noHistory="true"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".View.Profile.ProfileActivity"
-            android:parentActivityName=".View.Home.MenuActivity" />
-        <activity
-            android:name=".View.Profile.SettingActivity"
-            android:parentActivityName=".View.Home.MenuActivity" />
-        <activity
-            android:name=".View.Home.BMIActivity"
-            android:parentActivityName=".View.Home.MenuActivity" />
-        <activity
-            android:name=".View.Home.GoalsActivity"
-            android:parentActivityName=".View.Home.MenuActivity" />
-        <activity android:name=".View.RecordActivity" />
-        <activity
-            android:name=".View.Profile.AchievementActivity"
-            android:parentActivityName=".View.Home.MenuActivity" />
-        <activity
-            android:name=".View.Activity.ExerciseActivity"
-            android:parentActivityName=".View.Home.MenuActivity" />
-        <activity
-            android:name=".View.Activity.ExeDetailActivity"
-            android:parentActivityName=".View.Home.MenuActivity" />
+        <activity android:name=".View.IChoiceActivity"></activity>
 
-        <!-- Reminder -->
-        <activity
-            android:name=".View.Profile.ReminderActivity"
-            android:parentActivityName=".View.Home.MenuActivity" />
-        <activity
-            android:name=".View.Profile.EditAlarm"
-            android:parentActivityName=".View.Profile.ReminderActivity"
-            android:label="Edit Alarm" />
-        <activity
-            android:name=".View.Profile.AlarmNotification"
-            android:label="Alarm notification" />
-        <activity
-            android:name=".View.Profile.Preferences"
-            android:parentActivityName=".View.Profile.ReminderActivity"
-            android:label="Preferences" />
+        <service
+            android:name=".BackgroundSensor.TheService"
+            android:enabled="true" />
+        <service
+            android:name=".BackgroundSensor.AccelerometerSensor"
+            android:enabled="true" />
+        <service
+            android:name=".BackgroundSensor.AccelerometerSensor2"
+            android:enabled="true" />
 
-        <receiver
-            android:name=".Util.AlarmReceiver"
-            android:process=":remote" />
-        <receiver android:name=".Util.BootCompletedReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+        <service android:name=".HRStripBLE.BluetoothLeService" />
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </receiver>
+        <service android:name="com.choicemmed.a30.BleService" />
 
+        <receiver android:name=".View.IChoiceActivity$Receiver" />
     </application>
 
 </manifest>

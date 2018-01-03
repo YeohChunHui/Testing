@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Testing.iml" filepath="$PROJECT_DIR$/Testing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Device.iml" filepath="$PROJECT_DIR$/Device.iml" />
+      <module fileurl="file://$PROJECT_DIR$/a30sdk/a30sdk.iml" filepath="$PROJECT_DIR$/a30sdk/a30sdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
